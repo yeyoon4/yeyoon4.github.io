@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Homepage</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.png" alt="Kim Yeyoon" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Kim Yeyoon">Kim Yeyoon</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">dpdbs0980@g.skku.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/yeyoon4" class="contact-link">https://github.com/yeyoon4</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">March 12, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Suwon, South Korea</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Achievement</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, my name is Yeyoon Kim, bachelor's degree student at SKKU in South Korea. My major is Computer Science & Engineering. 
+          </p>
+
+          <p>
+            I have a strong interest in the fields of Natural Language Processing, Deep Learning, Machine Learning, and Big Data. Although I may still have limited experience in various domains, I am continuously enhancing my skills and capabilities through my academic coursework and diverse projects. My goal is to become a developer who constantly evolves and grows.
+          </p>
+
+        </section>
+
+
+        <!--
+          - skill
+        -->
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C++</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML</h5>
+                <data value="40">40%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+  
+          </section>
+
+
+        </div>
+
+      </article>
+
+
+      <!--
+        - #Education
+      -->
+
+      <article class="education" data-page="education">
+
+        <header>
+          <h2 class="h2 article-title">Education</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SKKU, South Korea</h4>
+
+              <span>2022 - Present</span>
+
+              <p class="timeline-text">
+                B.S., Computer Engineering
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="course">
+          <h3 class="h3 course-title">What I learned</h3>
+
+          <ul class="course-list">
+
+            <li class="course-item">
+
+              <div class="course-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Basis and Practice in Programming" width="40">
+              </div>
+
+              <div class="course-content-box">
+                <h4 class="h4 course-item-title">Basis and Practice in Programming</h4>
+
+                <p class="course-item-text">
+                  learn C language
+                </p>
+              </div>
+
+            </li>
+
+            <li class="course-item">
+
+              <div class="course-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Engineering Computer Programming" width="40">
+              </div>
+
+              <div class="course-content-box">
+                <h4 class="h4 course-item-title">Engineering Computer Programming</h4>
+
+                <p class="course-item-text">
+                  learn C++
+                </p>
+              </div>
+
+            </li>
+
+            <li class="course-item">
+
+              <div class="course-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Data Structure" width="40">
+              </div>
+
+              <div class="course-content-box">
+                <h4 class="h4 course-item-title">Data Structure</h4>
+
+                <p class="course-item-text">
+                  study the definition and characteristics of data structures and learn various algorithms based on these
+                </p>
+              </div>
+
+            </li>
+
+           
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #Experience
+      -->
+
+      <article class="experience" data-page="experience">
+
+        <header>
+          <h2 class="h2 article-title">Experience</h2>
+        </header>
+
+        <section class="experience">      
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+            </button>
+
+          </div>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Industry - University Cooperation Project</h4>
+
+              <span>2023.4 — Present</span>
+
+              <p class="timeline-text">
+                <b>Vive Company</b> Developing daily interactive chatbots based on generative AI
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Teaching Experience</h4>
+
+              <span>2022</span>
+
+              <p class="timeline-text">
+                <b>Sungkyun SW Mentoring</b>Teaching C language to elementrary school students
+              </p>
+
+            </li>
+
+          </ol>
+        </section>
+
+      </article>
+
+
+      <!--
+        - #Achievement
+      -->
+
+      <article class="achievement" data-page="achievement">
+
+        <header>
+          <h2 class="h2 article-title">Achievement</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="trophy"></ion-icon>
+            </div>
+
+            <h3 class="h3">Achievement</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sungkyun SW Mentoring Result Presentation</h4>
+
+              <span>2023.1</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
