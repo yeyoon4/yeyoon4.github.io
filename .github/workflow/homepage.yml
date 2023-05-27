@@ -1,27 +1,27 @@
 name: Homepage Workflow
 
-on:
+on: # if push to the "main" branch, implement the workflow
   push:
     branches: [ "main" ]
 
-jobs:
+jobs: 
   build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    runs-on: ubuntu-latest # the destination machine is ubuntu-latest
+    steps: 
+      - name: Checkout code 
+        uses: actions/checkout@v2 # the action to check out a repository to acceess it
         
+  # deploy job
   deploy:
-    environment:
+    environment: # specify the name and URL for the environment
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
+    runs-on: ubuntu-latest # the destination machine is ubuntu-latest
+    needs: build # before starting 'deploy', 'build' is needed
     steps:
       - name: Deploy
         id: deployment
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3 # use the action to deploy to github page
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          github_token: ${{ secrets.GITHUB_TOKEN }} # input of the "peaceiris/actions-gh-pages"
+          publish_dir: ./public  # specify the directory that the github page files are located
